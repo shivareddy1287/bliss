@@ -1,0 +1,165 @@
+.contact {
+  margin-top: 5rem;
+
+  &__img-cont {
+    text-align: center;
+    &__img {
+      height: 20rem;
+      @include respond(tab-port) {
+        height: 15rem;
+        margin-top: 5rem;
+      }
+      @include respond(phone) {
+        height: 10rem;
+        margin-top: 6rem;
+      }
+    }
+  }
+  &__cont {
+    // background-color: $color-grey-light-1;
+  }
+  &__heading-primary {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    color: $professional-color1;
+  }
+  &__heading-secondary {
+    font-size: 3.8rem;
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+  &__paragraph {
+    font-size: $default-font-size;
+    color: #535252;
+  }
+  &__address-box {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0rem;
+
+    padding: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba($color-black, 0.2);
+      border-radius: 5px;
+    }
+    &__icon {
+      height: 4rem;
+    }
+    h3 {
+      font-size: $default-font-size;
+      font-weight: 700;
+      margin-top: 0.8rem;
+    }
+    &__passage {
+      font-size: $default-font-size;
+      color: #767676;
+      margin-top: 1rem;
+    }
+    &__mail {
+      font-size: $default-font-size;
+      color: $professional-color1;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__address-card {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 3rem;
+    border-radius: 10px;
+    &__heading {
+      font-size: 2.6rem;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-top: 0.9rem;
+    }
+  }
+  &__map {
+    width: 100%;
+    border-radius: 10px;
+    height: 50rem;
+    margin-top: -2rem;
+    margin-top: 3rem;
+    border: 0;
+    margin-bottom: 5rem;
+  }
+
+  &__form {
+    background-image: url(../../assets/landline.webp);
+    height: 800px;
+    background-size: cover;
+    border-radius: 5px;
+
+    &__box {
+      background-image: linear-gradient(105deg, #01deff, #7043b2);
+      color: $color-white;
+      display: inline-block;
+      padding: 3rem 5rem;
+      width: 100%;
+      border-radius: 2px;
+      // height: 80%;
+      &__input-flex {
+        display: flex;
+        gap: 30px;
+      }
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      label {
+        display: block;
+        font-size: $default-font-size;
+        margin-bottom: 3px;
+        font-weight: 600;
+      }
+      input {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        border-radius: 0.6rem;
+        outline: none;
+        border: 0;
+        background-color: #f8f7f76c;
+        color: $color-white;
+        width: 100%;
+      }
+      textarea {
+        // resize: none;
+        // border: 2px solid #8b8a8a;
+        outline: none;
+        border-radius: 3px;
+        background-color: #f8f7f76c;
+        padding: 1rem;
+        font-size: $default-font-size;
+        width: 100%;
+      }
+      ::placeholder {
+        color: $color-white;
+      }
+      &__button {
+        background-color: $color-white;
+        color: $color-black;
+        padding: 1rem 4rem;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

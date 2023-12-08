@@ -1,0 +1,58 @@
+.services {
+  &__paragraph {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+  }
+  &__options-box {
+    // background-color: antiquewhite;
+    border-top: 10px solid $color-primary;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.1);
+
+    padding: 2rem;
+    &__heading {
+      font-size: 2rem;
+    }
+  }
+  &__options-box-qm {
+    border-top: 10px solid $color-primary;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.1);
+    padding: 2rem;
+    min-height: 21rem;
+  }
+  &__bpm-heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: start;
+    margin-bottom: 1rem;
+    color: $professional-color1;
+  }
+  &__bpm-passage {
+    font-size: 1.6rem;
+    text-align: start;
+    margin-bottom: 2rem;
+  }
+  &__bpm-card {
+    padding: 2rem;
+    box-shadow: 0 0.2rem 0.2rem 0.2rem rgba($color-black, 0.1);
+    &:hover {
+      box-shadow: 0 0.5rem 0.5rem 0.5rem rgba($color-black, 0.1);
+    }
+  }
+  &__solution-cont {
+    background-color: #000046;
+    padding: 5rem;
+    &__heading {
+      font-size: 5rem;
+      color: $color-white;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    &__passage {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 4rem;
+    }
+  }
+}

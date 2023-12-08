@@ -1,0 +1,101 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-white;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.2s;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    // #3579be
+    cursor: pointer;
+    border: none;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    transform: translateY((-0.1rem));
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-grey;
+  }
+  &--green {
+    padding: 1.5rem 4rem;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  &--green2 {
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    // width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    color: $color-white;
+    z-index: -1;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    // transition: all 0.2s;
+    transition: all 0.2s;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-out;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    transform: translateY(-0.2rem);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+    transform: translateY((-0.1rem));
+  }
+}
+
+.btn-gradient {
+  //
+  background-image: linear-gradient(
+    to right bottom,
+    $button-color-light,
+    $button-color-dark
+  );
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      to right bottom,
+      $button-color-light-1,
+      $button-color-dark-1
+    );
+  }
+}

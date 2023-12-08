@@ -1,0 +1,34 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/aboutUs";
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/careers";
+@import "components/composition";
+@import "components/contactUs";
+@import "components/domains";
+@import "components/feature-box";
+@import "components/form";
+@import "components/services";
+@import "components/popup";
+@import "components/storey";
+@import "components/technologies";
+
+@import "layouts/footer";
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/loader";
+@import "layouts/navigation";
+
+@import "pages/home";
+img {
+  caret-color: transparent;
+}
